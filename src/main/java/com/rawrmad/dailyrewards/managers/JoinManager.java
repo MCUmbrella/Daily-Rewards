@@ -1,6 +1,6 @@
-package com.rawrmad.DailyRewards.Managers;
+package com.rawrmad.dailyrewards.managers;
 
-import com.rawrmad.DailyRewards.Main.Main;
+import com.rawrmad.dailyrewards.Main;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -26,15 +26,6 @@ public class JoinManager implements Listener {
                 if (player.getName().equalsIgnoreCase("halflove"))
                     player.sendMessage(ChatColor.GREEN + "DailyRewards misses you Halflove! :)"
                             + JoinManager.plugin.getDescription().getVersion());
-                if(player.isOp()) {
-                    new UpdateChecker(plugin, 97753).getLatestVersion(version -> {
-                        if (!plugin.getDescription().getVersion().equalsIgnoreCase(version)) {
-                            player.sendMessage(ChatColor.GOLD + "*** Daily Rewards is Outdated! ***");
-                            player.sendMessage(ChatColor.YELLOW + "You're on " + ChatColor.WHITE + plugin.getDescription().getVersion() + ChatColor.YELLOW + " while " + ChatColor.WHITE + version + ChatColor.YELLOW + " is available!");
-                            player.sendMessage(ChatColor.YELLOW + "Update Here: " + ChatColor.WHITE + "https://bit.ly/3FClwmv");
-                        }
-                    });
-                }
             }
         }).runTaskLater((Plugin) plugin, 50L);
         if (SettingsManager.getConfig().getBoolean("loginclaim.enabled") && player.hasPermission("dr.claim")) {

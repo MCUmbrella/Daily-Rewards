@@ -1,8 +1,8 @@
-package com.rawrmad.DailyRewards.Commands;
+package com.rawrmad.dailyrewards.commands;
 
-import com.rawrmad.DailyRewards.Main.Main;
-import com.rawrmad.DailyRewards.Managers.MySQLManager;
-import com.rawrmad.DailyRewards.Managers.SettingsManager;
+import com.rawrmad.dailyrewards.Main;
+import com.rawrmad.dailyrewards.managers.MySQLManager;
+import com.rawrmad.dailyrewards.managers.SettingsManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

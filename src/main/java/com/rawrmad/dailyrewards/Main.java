@@ -1,8 +1,8 @@
-package com.rawrmad.DailyRewards.Main;
+package com.rawrmad.dailyrewards;
 
-import com.rawrmad.DailyRewards.Commands.AdminCommands;
-import com.rawrmad.DailyRewards.Commands.RewardCommands;
-import com.rawrmad.DailyRewards.Managers.*;
+import com.rawrmad.dailyrewards.commands.AdminCommands;
+import com.rawrmad.dailyrewards.commands.RewardCommands;
+import com.rawrmad.dailyrewards.managers.*;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
@@ -43,17 +43,6 @@ public class Main extends JavaPlugin implements Listener {
         } else {
             papi = false;
         }
-
-        new UpdateChecker(this, 97753).getLatestVersion(version -> {
-            if(this.getDescription().getVersion().equalsIgnoreCase(version)) {
-                getLogger().info("Plugin is up to date.");
-            } else {
-                getLogger().severe("*** Daily Rewards is Outdated! ***");
-                getLogger().severe("*** You're on " + this.getDescription().getVersion() + " while " + version + " is available! ***");
-                getLogger().severe("*** Update Here: https://www.spigotmc.org/resources/daily-rewards.97753/ ***");
-            }
-        });
-
     }
 
     private void registerEvents() {

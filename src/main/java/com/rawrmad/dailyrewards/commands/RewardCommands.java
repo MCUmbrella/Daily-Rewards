@@ -1,10 +1,10 @@
-package com.rawrmad.DailyRewards.Commands;
+package com.rawrmad.dailyrewards.commands;
 
-import com.rawrmad.DailyRewards.Main.Main;
-import com.rawrmad.DailyRewards.Managers.CooldownManager;
-import com.rawrmad.DailyRewards.Managers.MySQLManager;
-import com.rawrmad.DailyRewards.Managers.RewardManager;
-import com.rawrmad.DailyRewards.Managers.SettingsManager;
+import com.rawrmad.dailyrewards.Main;
+import com.rawrmad.dailyrewards.managers.CooldownManager;
+import com.rawrmad.dailyrewards.managers.MySQLManager;
+import com.rawrmad.dailyrewards.managers.RewardManager;
+import com.rawrmad.dailyrewards.managers.SettingsManager;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

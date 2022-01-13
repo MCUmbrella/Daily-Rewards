@@ -1,6 +1,6 @@
-package com.rawrmad.DailyRewards.Managers;
+package com.rawrmad.dailyrewards.managers;
 
-import com.rawrmad.DailyRewards.Main.Main;
+import com.rawrmad.dailyrewards.Main;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

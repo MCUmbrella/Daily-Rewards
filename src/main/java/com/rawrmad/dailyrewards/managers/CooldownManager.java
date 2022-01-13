@@ -1,4 +1,4 @@
-package com.rawrmad.DailyRewards.Managers;
+package com.rawrmad.dailyrewards.managers;
 
 import org.bukkit.entity.Player;
 

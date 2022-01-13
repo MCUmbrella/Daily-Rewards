@@ -1,9 +1,9 @@
 name: DailyRewards
 author: RAWRMaD
-main: com.rawrmad.DailyRewards.Main.Main
+main: com.rawrmad.dailyrewards.Main
 version: 1.3.8r
 softdepend: [PlaceholderAPI]
-api-version: 1.17
+api-version: 1.13
 
 commands:
   dailyrewards:

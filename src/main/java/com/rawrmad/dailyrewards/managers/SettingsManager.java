@@ -1,4 +1,4 @@
-package com.rawrmad.DailyRewards.Managers;
+package com.rawrmad.dailyrewards.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -59,7 +59,7 @@ public class SettingsManager {
         config.addDefault("noreward.sound.volume", Integer.valueOf(1));
         config.addDefault("noreward.sound.pitch", Integer.valueOf(1));
         List<String> command = new ArrayList<>();
-        command.add("give %player minecraft:diamond 1");
+        command.add("give %player% minecraft:diamond 1");
         List<String> bworld = new ArrayList<>();
         
         String createDaily = SettingsManager.getConfig().getString("regenerate-default-rewards");
